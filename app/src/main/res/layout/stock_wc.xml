@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:background="@drawable/textviewth"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/title_wc"
+            android:textColor="#d61e30"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="3dp"
+                    android:textSize="13sp"
+                    android:text="Click to Edit Data =>"/>
+                <Button
+                    android:id="@+id/editDa"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="3dp"
+                    android:text="Edit Data"
+                    android:background="@drawable/edit_text_drawable"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="3dp"
+                    android:textSize="13sp"
+                    android:text="Customer Name"/>
+                <Spinner
+                    android:id="@+id/custName"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="3dp"
+                    android:entries="@array/cus_name"
+                    android:background="@drawable/edit_text_drawable"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="3dp"
+                    android:textSize="13sp"
+                    android:text="Location"/>
+                <Spinner
+                    android:id="@+id/locatAdr"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="3dp"
+                    android:entries="@array/location_og"
+                    android:background="@drawable/edit_text_drawable"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="3dp"
+                    android:textSize="13sp"
+                    android:text="Product Name"/>
+                <Spinner
+                    android:id="@+id/prodName"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="3dp"
+                    android:entries="@array/product_og"
+                    android:background="@drawable/edit_text_drawable"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="3dp"
+                    android:textSize="11.5sp"
+                    android:text="Commencement Date"/>
+                <TextView
+                    android:id="@+id/cdt"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="3dp"
+                    android:hint="@string/date"
+                    android:backgroundTint="#cab1b1"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/edit_text_drawable"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="3dp"
+                    android:textSize="13sp"
+                    android:text="Reporting Date"/>
+                <TextView
+                    android:id="@+id/rdt"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="3dp"
+                    android:hint="@string/date"
+                    android:backgroundTint="#cab1b1"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/edit_text_drawable"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="3dp"
+                    android:textSize="13sp"
+                    android:text="Vessel Name"/>
+                <AutoCompleteTextView
+                    android:id="@+id/vesNam"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/edit_text_drawable"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:hint="Bank Release"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:hint="Bank Balance"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/bankRz"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="3dp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edit_text_drawable"/>
+                <EditText
+                    android:id="@+id/bankBa"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="3dp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edit_text_drawable"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:hint="Opening Stock"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:hint="Take On"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/opBal"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="3dp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edit_text_drawable"/>
+                <EditText
+                    android:id="@+id/tkOn"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="3dp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edit_text_drawable"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:hint="Release 1"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:hint="Release 2"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:hint="Release 3"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:hint="Closing Balance"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/rel1"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="3dp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edit_text_drawable"/>
+                <EditText
+                    android:id="@+id/rel2"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="3dp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edit_text_drawable"/>
+                <EditText
+                    android:id="@+id/rel3"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="3dp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edit_text_drawable"/>
+                <TextView
+                    android:id="@+id/clBal"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="3dp"
+                    android:inputType="numberDecimal"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#4848ce"
+                android:text="@string/submit"/>
+            <!--Button
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#4848ce"
+                android:onClick="onClick"
+                android:text="@string/submit"/-->
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

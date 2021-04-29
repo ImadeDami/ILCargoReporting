@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">ILCargoReporting</string>
+
+    <string name="title">FMCG Stock Inventory</string>
+    <string name="title_wc">Wet Cargo Stock Report</string>
+    <string name="title_dc">Dry Cargo Stock Report</string>
+    <string name="date">dd/mm/yyyy</string>
+    <string name="submit">submit</string>
+    <string name="product_name">product name</string>
+    <string name="customer_name">customer name</string>
+    <string-array name="location_fmcg">
+        <item></item>
+        <item>Location1</item>
+        <item>Location2</item>
+        <item>Location3</item>
+    </string-array>
+    <string-array name="mkt_fmcg">
+        <item></item>
+        <item>Market1</item>
+        <item>Market2</item>
+        <item>Market3</item>
+    </string-array>
+    <string-array name="product_fmcg">
+        <item></item>
+        <item>Product1</item>
+        <item>Product2</item>
+        <item>Product3</item>
+    </string-array>
+    <string-array name="location_og">
+        <item></item>
+        <item>Location1</item>
+        <item>Location2</item>
+        <item>Location3</item>
+    </string-array>
+    <string-array name="cus_name">
+        <item></item>
+        <item>customer1</item>
+        <item>customer2</item>
+        <item>customer3</item>
+    </string-array>
+    <string-array name="product_og">
+        <item></item>
+        <item>product1</item>
+        <item>product2</item>
+        <item>product3</item>
+    </string-array>
+    <string name="cargo">Cargo</string>
+    <string name="fmcg">fmcg</string>
+    <string name="dry_cargo">Dry Cargo</string>
+    <string name="wet_cargo">Wet Cargo</string>
+    <string name="gps_location">upload image</string>
+    <string name="chsImg0">select location image</string>
+    <string name="chsImg1">select outside image</string>
+    <string name="chsImg2">select inside image </string>
+    <string name="chsImg3">select your image</string>
+    <string name="upload">upload image</string>
+    <string name="uploadCG">Upload Cargo location images before inspection/stock taking</string>
+    <string name="uploadFMCG">Upload FMCG location images before inspection/stock taking</string>
+</resources>
